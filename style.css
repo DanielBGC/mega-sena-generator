@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 90%;
+    min-width: 500px;
+}
+
+h1 {
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+}
+
+.select-container {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.select-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #1e3c72;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #1e3c72;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #2a5298;
+}
+
+select:focus {
+    box-shadow: 0 0 5px rgba(30, 60, 114, 0.3);
+}
+
+.numbers {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.generate {
+    background-color: #1e3c72;
+    color: white;
+}
+
+.copy {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.message {
+    margin-top: 10px;
+    color: #4CAF50;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Gerador Mega da Virada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador Mega da Virada</h1>
+        <div class="select-container">
+            <label for="numberCount" class="select-label">Quantidade de números:</label>
+            <select id="numberCount">
+                <option value="6">6 números</option>
+                <option value="7">7 números</option>
+                <option value="8">8 números</option>
+                <option value="9">9 números</option>
+                <option value="10">10 números</option>
+                <option value="11">11 números</option>
+                <option value="12">12 números</option>
+                <option value="13">13 números</option>
+                <option value="14">14 números</option>
+                <option value="15">15 números</option>
+            </select>
+        </div>
+        <div class="numbers" id="result">Clique no botão para gerar os números</div>
+        <button class="generate" onclick="generateNumbers()">Gerar Números</button>
+        <button class="copy" onclick="copyNumbers()">Copiar Números</button>
+        <div class="message" id="copyMessage">Números copiados com sucesso!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
